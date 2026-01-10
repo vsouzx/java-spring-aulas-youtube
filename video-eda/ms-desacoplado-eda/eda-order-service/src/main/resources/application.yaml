@@ -1,0 +1,34 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: eda-order-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/eda_order
+    username: root
+    password: ${MYSQL_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+aws:
+  region: sa-east-1
+  sns:
+    pedido-criado-topic-arn: "arn:aws:sns:sa-east-1:337328321041:pedido-criado-topic"
+  sqs:
+    pagamento-processado-queue: "arn:aws:sqs:sa-east-1:337328321041:pagamento-processado-queue"

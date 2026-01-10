@@ -1,0 +1,11 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: rest-payment-service
+
+  mongodb:
+    uri: mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@localhost:27017/rest_payment?authSource=admin
+    representation:
+      uuid: standard

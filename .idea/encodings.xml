@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/video-eda/monolito/monolith-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-eda/ms-acoplado/rest-order-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-eda/ms-acoplado/rest-payment-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-eda/ms-desacoplado-eda/eda-order-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-eda/ms-desacoplado-eda/eda-payment-service/src/main/java" charset="UTF-8" />
+  </component>
+</project>

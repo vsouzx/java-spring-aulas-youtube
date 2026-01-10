@@ -1,0 +1,18 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: eda-payment-service
+
+  mongodb:
+    uri: mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@localhost:27017/eda_payment?authSource=admin
+    representation:
+      uuid: standard
+
+aws:
+  region: sa-east-1
+  sqs:
+    pedido-criado-queue: "arn:aws:sqs:sa-east-1:337328321041:pedido-criado-queue"
+  sns:
+    pagamento-processado-topic: "arn:aws:sns:sa-east-1:337328321041:pagamento-processado-topic"
