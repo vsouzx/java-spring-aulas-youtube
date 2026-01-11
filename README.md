@@ -1,2 +1,2 @@
-# java-spring-aulas-youtube
-Códigos-fonte das aulas de Java/Spring que gravo pro meu canal do @Youtube
+# Aulas para o Youtube com Java/Spring/AWS
+Código-fonte das aulas de Java/Spring/AWS que gravo para o meu canal do @Youtube
