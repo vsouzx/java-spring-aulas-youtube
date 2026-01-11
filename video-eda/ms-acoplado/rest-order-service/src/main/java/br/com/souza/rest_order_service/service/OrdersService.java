@@ -81,7 +81,8 @@ public class OrdersService {
             log.info("Pagamento validado: {}", validatedPayment.getStatus());
 
             if (validatedPayment.getStatus().equalsIgnoreCase(PaymentStatus.FRAUD_DETECTED.name()) ||
-                    validatedPayment.getStatus().equalsIgnoreCase(PaymentStatus.INSUFFICIENT_BALANCE.name())) {
+                    validatedPayment.getStatus().equalsIgnoreCase(PaymentStatus.INSUFFICIENT_BALANCE.name()) ||
+                    validatedPayment.getStatus().equalsIgnoreCase(PaymentStatus.UNAVAILABLE_PAYMENT_TYPE.name())) {
                 createdOrder.setStatus(OrderStatus.CANCELED);
 
                 // Rollback do estoque: Devolvemos os itens para o produto
