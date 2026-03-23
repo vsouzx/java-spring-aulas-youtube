@@ -81,7 +81,7 @@ public class PaymentsService {
         int hour = orderCreatedAt.getHour();
         if (hour < 6 || hour > 22) {
             log.info("Pedido suspeito: criado fora do horário padrão");
-            return false;
+            return true;
         }
 
         return false;
