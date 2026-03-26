@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-boot-essentials
+    name: spring-boot-essentials-jpa
 
 server:
   port: 8082

@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/video-eda/ms-acoplado/rest-payment-service/pom.xml" />
         <option value="$PROJECT_DIR$/video-eda/ms-desacoplado-eda/eda-order-service/pom.xml" />
         <option value="$PROJECT_DIR$/video-eda/ms-desacoplado-eda/eda-payment-service/pom.xml" />
+        <option value="$PROJECT_DIR$/mini-curso-spring/spring-boot-essentials-web/pom.xml" />
+        <option value="$PROJECT_DIR$/mini-curso-spring/spring-boot-essentials-jpa/pom.xml" />
       </list>
     </option>
   </component>

@@ -13,6 +13,16 @@
         <module name="rest-order-service" />
         <module name="monolith-service" />
       </profile>
+      <profile name="Annotation profile for spring-boot-essentials-jpa" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.44/lombok-1.18.44.jar" />
+        </processorPath>
+        <module name="spring-boot-essentials-jpa" />
+        <module name="spring-boot-essentials-web" />
+      </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
@@ -22,6 +32,8 @@
       <module name="monolith-service" options="-parameters" />
       <module name="rest-order-service" options="-parameters" />
       <module name="rest-payment-service" options="-parameters" />
+      <module name="spring-boot-essentials-jpa" options="-parameters" />
+      <module name="spring-boot-essentials-web" options="-parameters" />
     </option>
   </component>
 </project>
