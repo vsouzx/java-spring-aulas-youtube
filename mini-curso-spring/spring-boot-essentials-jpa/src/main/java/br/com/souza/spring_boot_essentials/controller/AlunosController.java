@@ -34,4 +34,10 @@ public class AlunosController {
     public AvaliacaoesFisicasEntity getAvaliacaoFisica(@PathVariable Integer alunoId) throws NotFoundException {
         return alunosService.getAlunoAvalicacao(alunoId);
     }
+
+    @DeleteMapping("/{alunoId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void removerAluno(@PathVariable Integer alunoId) throws Exception {
+        alunosService.deletarAluno(alunoId);
+    }
 }
